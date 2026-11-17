@@ -152,7 +152,7 @@
         </div>
 
         <!-- ===== PRODUK 1 — PAKET EKONOMI ===== -->
-        Apk badak dan nokos racikan yang siap pakai
+        aplikasi badak dan nokos racikan yang siap pakai
         <div class="product-card">
             <div class="product-header">
                 <div class="product-left">
@@ -172,7 +172,7 @@
         </div>
 
         <!-- ===== PRODUK 2 — JASA BADAKIN WA ===== -->
-        No badak berfitur agent ai vermet dan siaran langsung
+        no badak berfitur agent ai vermet dan siaran langsung
         <div class="product-card">
             <div class="product-header">
                 <div class="product-left">
@@ -192,7 +192,7 @@
         </div>
 
         <!-- ===== PRODUK 3 — NOMOR BLAST ===== -->
-        Whatsaap yang memiliki fitur lengkap yaitu,centang biru,agent ai,memiliki verifikasi meta,dan mempunyai fitur siaran langsung
+        whatsaap yang memiliki fitur lengkap yaitu,centang biru,agent ai,memiliki verifikasi meta,dan mempunyai fitur siaran langsung
         <div class="product-card featured">
             <div class="product-header">
                 <div class="product-left">
@@ -239,3 +239,161 @@
             <div class="prod-buttons">
                 <a href="#" class="btn-detail">📋 Detail Produk</a>
                 <
+
+
+
+
+                    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SedzOfficial — Pusat Bantuan</title>
+    <style>
+        *{margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif;}
+        body{background:#f0f4f8; min-height:100vh; padding:2rem 1rem 4rem;}
+        .container{max-width:480px; margin:0 auto;}
+
+        /* ===== FAQ SECTION ===== */
+        .faq-section{text-align:center; margin-bottom:2rem;}
+        .help-tag{background:#eff6ff; color:#2563eb; font-size:0.9rem; padding:0.4rem 1.2rem; border-radius:999px; display:inline-block; margin-bottom:1rem; font-weight:500;}
+        .faq-section h2{font-size:1.6rem; color:#111827; margin-bottom:0.5rem; line-height:1.3;}
+        .faq-desc{color:#6b7280; font-size:1rem; max-width:360px; margin:0 auto 2rem; line-height:1.5;}
+
+        /* ===== FAQ ITEM ===== */
+        details{background:white; border-radius:16px; padding:0; margin-bottom:0.8rem; box-shadow:0 2px 8px rgba(0,0,0,0.04); text-align:left; border:1px solid transparent; transition:0.2s;}
+        details[open]{border-color:#2563eb; background:#eff6ff;}
+        summary{list-style:none; padding:1.25rem 1.5rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center; font-size:0.95rem; color:#1f2937; font-weight:500;}
+        summary::-webkit-details-marker{display:none;}
+        
+        .faq-left{display:flex; align-items:center; gap:0.75rem;}
+        .faq-icon{font-size:1.15rem;}
+        .faq-text{line-height:1.4;}
+        .faq-arrow{color:#d1d5db; font-size:1.1rem; font-weight:bold; transition:0.3s ease;}
+        details[open] .faq-arrow{transform:rotate(180deg); color:#2563eb;}
+        
+        .faq-content{padding:0 1.5rem 1.25rem 3.25rem; color:#4b5563; font-size:0.9rem; line-height:1.7;}
+        .faq-content p{margin-bottom:0.5rem;}
+        .faq-content strong{color:#1f2937;}
+
+        /* ===== CS BOT BOX ===== */
+        .cs-box{background:linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%); border-radius:20px; padding:2rem 1.5rem; color:white; margin-top:2rem; text-align:left;}
+        .cs-header{display:flex; align-items:center; gap:0.8rem; margin-bottom:0.8rem;}
+        .cs-icon{width:44px; height:44px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;}
+        .cs-title{font-size:1.2rem; font-weight:600;}
+        .cs-desc{font-size:0.9rem; color:#dbeafe; margin-bottom:1.25rem; line-height:1.5;}
+        .btn-cs{background:white; color:#2563eb; border:none; padding:0.8rem 1.6rem; border-radius:14px; font-weight:600; font-size:0.95rem; cursor:pointer; display:inline-flex; align-items:center; gap:0.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:0.2s; text-decoration:none;}
+        .btn-cs:hover{transform:translateY(-2px); box-shadow:0 6px 16px rgba(0,0,0,0.15);}
+
+        /* ===== FLOATING ICONS ===== */
+        .floating-icons{position:fixed; bottom:1.5rem; left:1.5rem; right:1.5rem; display:flex; justify-content:space-between; pointer-events:none;}
+        .float-icon{width:56px; height:56px; background:#2563eb; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.3rem; box-shadow:0 4px 12px rgba(37,99,235,0.3); pointer-events:auto; position:relative;}
+        .float-icon:last-child::after{content:''; position:absolute; top:4px; right:4px; width:14px; height:14px; background:#22c55e; border-radius:50%; border:2px solid #f0f4f8;}
+
+        /* ===== FOOTER ===== */
+        footer{text-align:center; margin-top:3rem; padding-bottom:4rem; color:#9ca3af; font-size:0.85rem;}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ===== FAQ SECTION ===== -->
+        <div class="faq-section">
+            <span class="help-tag">Pusat Bantuan</span>
+            <h2>Pertanyaan Yang Sering<br>Ditanyakan</h2>
+            <p class="faq-desc">Temukan jawaban cepat untuk pertanyaan populer kamu di bawah ini.</p>
+
+            <!-- FAQ 1: Klaim Garansi -->
+            <details>
+                <summary>
+                    <div class="faq-left">
+                        <span class="faq-icon">🛡️</span>
+                        <span class="faq-text"><strong>Bagaimana cara melakukan klaim garansi?</strong></span>
+                    </div>
+                    <span class="faq-arrow">⌄</span>
+                </summary>
+                <div class="faq-content">
+                    <p>Klaim garansi sangat mudah dan praktis! Cukup ikuti langkah berikut:</p>
+                    <p>📋 Siapkan <strong>ID Transaksi</strong> atau Nomor WhatsApp saat pembelian.</p>
+                    <p>💬 Hubungi <strong>CS Bot / Admin</strong> kami melalui fitur chat.</p>
+                    <p>📸 Kirimkan bukti kendala (screenshot/video singkat).</p>
+                    <p>✅ Tim kami akan memproses penggantian/perbaikan dalam waktu <strong>1×24 jam</strong>.</p>
+                </div>
+            </details>
+
+            <!-- FAQ 2: Kenapa beli di sini -->
+            <details>
+                <summary>
+                    <div class="faq-left">
+                        <span class="faq-icon">⭐</span>
+                        <span class="faq-text"><strong>Kenapa saya harus beli di SedzOfficial?</strong></span>
+                    </div>
+                    <span class="faq-arrow">⌄</span>
+                </summary>
+                <div class="faq-content">
+                    <p>Karena kami menjamin:</p>
+                    <p>✅ <strong>Produk Terjamin</strong> — Semua produk sudah dicek sebelum dikirim</p>
+                    <p>✅ <strong>Garansi Uang Kembali</strong> — Jika produk tidak berfungsi</p>
+                    <p>✅ <strong>Layanan Cepat</strong> — Respons dalam hitungan menit</p>
+                    <p>✅ <strong>Harga Terjangkau</strong> — Langsung penyedia tanpa perantara</p>
+                </div>
+            </details>
+
+            <!-- FAQ 3: Keamanan Transaksi -->
+            <details>
+                <summary>
+                    <div class="faq-left">
+                        <span class="faq-icon">🔒</span>
+                        <span class="faq-text"><strong>Apakah transaksi di website ini aman?</strong></span>
+                    </div>
+                    <span class="faq-arrow">⌄</span>
+                </summary>
+                <div class="faq-content">
+                    <p><strong>Sangat Aman!</strong> 🔐</p>
+                    <p>✅ Data pribadi kamu tidak pernah dibagikan ke pihak ketiga</p>
+                    <p>✅ Pembayaran melalui jalur resmi dan terenkripsi</p>
+                    <p>✅ Bukti pembayaran tersimpan otomatis</p>
+                    <p>✅ Kami tidak meminta data sensitif seperti PIN/kata sandi</p>
+                </div>
+            </details>
+
+            <!-- FAQ 4: Metode Pembayaran -->
+            <details>
+                <summary>
+                    <div class="faq-left">
+                        <span class="faq-icon">💳</span>
+                        <span class="faq-text"><strong>Metode pembayaran apa saja yang tersedia?</strong></span>
+                    </div>
+                    <span class="faq-arrow">⌄</span>
+                </summary>
+                <div class="faq-content">
+                    <p>Kami menerima pembayaran melalui:</p>
+                    <p>🏦 <strong>Transfer Bank</strong> — BCA, BRI, Mandiri, BNI</p>
+                    <p>💵 <strong>E-Wallet</strong> — DANA, OVO, GoPay, ShopeePay</p>
+                    <p>📱 <strong>QRIS</strong> — Scan dan bayar langsung</p>
+                    <p>📶 <strong>Pulsa</strong> — Telkomsel, Indosat, XL</p>
+                </div>
+            </details>
+
+            <!-- ===== CS BOT BOX ===== -->
+            <div class="cs-box">
+                <div class="cs-header">
+                    <div class="cs-icon">🤖</div>
+                    <h3 class="cs-title">Punya Pertanyaan Lain?</h3>
+                </div>
+                <p class="cs-desc">Tanyakan langsung ke CS MizueOfficial (Bot) untuk jawaban otomatis instan!</p>
+                <a href="https://wa.me/628212898365?text=Halo%21%20Saya%20ada%20pertanyaan%20lain." target="_blank" class="btn-cs">💬 Chat CS Bot</a>
+            </div>
+        </div>
+
+        <!-- ===== FLOATING ICONS ===== -->
+        <div class="floating-icons">
+            <div class="float-icon">🎵</div>
+            <div class="float-icon">🎧</div>
+        </div>
+
+        <footer>© 2026 MizueOfficial. All rights reserved.</footer>
+    </div>
+</body>
+</html>
+
