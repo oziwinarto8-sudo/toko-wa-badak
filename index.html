@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MizueOfficial — Toko Digital</title>
+    <title>SedzOfficial — Toko Digital</title>
     <style>
         *{margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif;}
         body{background:#f0f4f8; min-height:100vh; padding:2rem 1rem 4rem;}
@@ -40,7 +40,7 @@
         .review-section{background:white; border-radius:14px; padding:1.25rem; margin-bottom:1.5rem; box-shadow:0 1px 4px rgba(0,0,0,0.03);}
         .review-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;}
         .review-header h3{font-size:0.95rem; color:#1f2937; display:flex; align-items:center; gap:0.4rem;}
-        .btn-review{background:#eff6ff; color:#2563eb; border:none; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.8rem; font-weight:500; cursor:pointer;}
+        .btn-review{background:#eff6ff; color:#2563eb; border:none; padding:0.4rem 0.8rem; border-radius:6px; font-size:0.8rem; font-weight:500; cursor:pointer; text-decoration:none; display:inline-block;}
         .review{padding-bottom:0.8rem;}
         .review-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:0.3rem;}
         .review-name{font-weight:600; font-size:0.9rem; color:#1f2937; display:flex; align-items:center; gap:0.4rem;}
@@ -60,8 +60,9 @@
         .prod-old-price{font-size:0.75rem; color:#9ca3af; text-decoration:line-through; margin-left:0.4rem; font-weight:normal;}
         .prod-desc{font-size:0.8rem; color:#6b7280; margin:0.4rem 0 0.8rem; display:flex; align-items:center; gap:0.4rem;}
         .prod-buttons{display:grid; grid-template-columns:1fr 1fr; gap:0.6rem;}
-        .btn-detail{background:#f3f4f6; color:#374151; border:none; padding:0.6rem; border-radius:8px; font-size:0.85rem; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.3rem;}
-        .btn-buy{background:#2563eb; color:white; border:none; padding:0.6rem; border-radius:8px; font-size:0.85rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.3rem;}
+        .btn-detail{background:#f3f4f6; color:#374151; border:none; padding:0.6rem; border-radius:8px; font-size:0.85rem; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.3rem; text-decoration:none;}
+        .btn-buy{background:#2563eb; color:white; border:none; padding:0.6rem; border-radius:8px; font-size:0.85rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.3rem; text-decoration:none; transition:0.2s;}
+        .btn-buy:hover{background:#1d4ed8; transform:translateY(-1px);}
         
         /* ===== PRODUK BESAR (Nomor Blast) ===== */
         .product-card.featured{background:white; border-radius:14px; padding:1.25rem; margin-bottom:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.04);}
@@ -86,7 +87,7 @@
         .cs-box{background:linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%); border-radius:14px; padding:1.4rem; color:white; margin-top:1.5rem; text-align:center;}
         .cs-title{font-size:1rem; font-weight:600; margin-bottom:0.4rem; display:flex; align-items:center; justify-content:center; gap:0.5rem;}
         .cs-desc{font-size:0.8rem; color:#dbeafe; margin-bottom:1rem;}
-        .btn-cs{background:white; color:#2563eb; border:none; padding:0.6rem 1.4rem; border-radius:8px; font-weight:600; font-size:0.9rem; cursor:pointer; display:inline-flex; align-items:center; gap:0.4rem;}
+        .btn-cs{background:white; color:#2563eb; border:none; padding:0.6rem 1.4rem; border-radius:8px; font-weight:600; font-size:0.9rem; cursor:pointer; display:inline-flex; align-items:center; gap:0.4rem; text-decoration:none;}
 
         /* ===== FLOATING ICONS ===== */
         .floating-icons{position:fixed; bottom:1.5rem; left:1.5rem; right:1.5rem; display:flex; justify-content:space-between; pointer-events:none;}
@@ -103,13 +104,13 @@
         <!-- ===== PROFIL ===== -->
         <div class="profile">
             <div class="avatar">🦏🛡️</div>
-            <h1 class="nama-toko">MizueOfficial <span class="verified">✓</span></h1>
+            <h1 class="nama-toko">SedzOfficial <span class="verified">✓</span></h1>
         </div>
 
         <!-- ===== SAMBUTAN ===== -->
         <div class="welcome">
             <span class="welcome-icon">👋</span>
-            <p>Selamat datang Kawan di MizueOfficial Shop! Kami menjual berbagai produk digital yang aman, legal, dan dilengkapi <span class="garansi">Garansi Uang Kembali</span> pada setiap pembelian.</p>
+            <p>Selamat datang Kawan di SedzOfficial Shop! Kami menjual berbagai produk digital yang aman, legal, dan dilengkapi <span class="garansi">Garansi Uang Kembali</span> pada setiap pembelian.</p>
         </div>
 
         <!-- ===== INFO SOSIAL ===== -->
@@ -138,7 +139,7 @@
         <div class="review-section">
             <div class="review-header">
                 <h3>⭐ Ulasan Pembeli</h3>
-                <button class="btn-review">✏️ Beri Ulasan</button>
+                <a href="https://wa.me/6281234567890?text=Halo%21%20Saya%20ingin%20memberikan%20ulasan." target="_blank" class="btn-review">✏️ Beri Ulasan</a>
             </div>
             <div class="review">
                 <div class="review-top">
@@ -150,7 +151,8 @@
             </div>
         </div>
 
-        <!-- ===== PRODUK 1 ===== -->
+        <!-- ===== PRODUK 1 — PAKET EKONOMI ===== -->
+        Apk badak dan nokos racikan yang siap pakai
         <div class="product-card">
             <div class="product-header">
                 <div class="product-left">
@@ -164,12 +166,13 @@
             </div>
             <p class="prod-desc">⏱️ Estimasi: 60-80+ Chat</p>
             <div class="prod-buttons">
-                <button class="btn-detail">📋 Detail Produk</button>
-                <button class="btn-buy">🛒 Buy Now</button>
+                <a href="#" class="btn-detail">📋 Detail Produk</a>
+                <a href="https://wa.me/628212898365?text=Halo%21%20Saya%20ingin%20pesan%20PAKET%20EKONOMI%20-%20Rp52.500" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
 
-        <!-- ===== PRODUK 2 ===== -->
+        <!-- ===== PRODUK 2 — JASA BADAKIN WA ===== -->
+        No badak berfitur agent ai vermet dan siaran langsung
         <div class="product-card">
             <div class="product-header">
                 <div class="product-left">
@@ -183,12 +186,13 @@
             </div>
             <p class="prod-desc">⏱️ Estimasi: 100-250+ Chat</p>
             <div class="prod-buttons">
-                <button class="btn-detail">📋 Detail Produk</button>
-                <button class="btn-buy">🛒 Buy Now</button>
+                <a href="#" class="btn-detail">📋 Detail Produk</a>
+                <a href="https://wa.me/628212898365?text=Halo%21%20Saya%20ingin%20pesan%20JASA%20BADAKIN%20WA%20-%20Rp89.999" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
 
-        <!-- ===== PRODUK 3 - NOMOR BLAST ===== -->
+        <!-- ===== PRODUK 3 — NOMOR BLAST ===== -->
+        Whatsaap yang memiliki fitur lengkap yaitu,centang biru,agent ai,memiliki verifikasi meta,dan mempunyai fitur siaran langsung
         <div class="product-card featured">
             <div class="product-header">
                 <div class="product-left">
@@ -209,17 +213,17 @@
                 </div>
                 <div>
                     <div class="feature-item"><span class="check-icon">✅</span> FREE Web Blast*</div>
-                    <div class="feature-item"><span class="stock-badge">STOK BELUM READY</span></div>
+                    <div class="stock-badge">STOK BELUM READY</div>
                 </div>
             </div>
             
             <div class="prod-buttons">
-                <button class="btn-detail">📋 Detail Produk</button>
-                <button class="btn-buy">🛒 Buy Now</button>
+                <a href="#" class="btn-detail">📋 Detail Produk</a>
+                <a href="https://wa.me/628212898365?text=Halo%21%20Saya%20ingin%20pesan%20NOMOR%20BLAST%20-%20Rp122.000" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
 
-        <!-- ===== PRODUK 4 - WA BLAST ===== -->
+        <!-- ===== PRODUK 4 — WA BLAST ===== -->
         <div class="product-card">
             <div class="product-header">
                 <div class="product-left">
@@ -233,27 +237,5 @@
             </div>
             <p class="prod-desc">⏱️ Estimasi: 500-1.000+ Chat</p>
             <div class="prod-buttons">
-                <button class="btn-detail">📋 Detail Produk</button>
-                <button class="btn-buy">🛒 Buy Now</button>
-            </div>
-        </div>
-
-        <!-- ===== FAQ ===== -->
-        <div class="faq-section">
-            <span class="help-tag">Pusat Bantuan</span>
-            <h2>Pertanyaan Yang Sering Ditanyakan</h2>
-
-            <details>
-                <summary>🛡️ Bagaimana cara melakukan klaim garansi? <span class="faq-arrow">⌄</span></summary>
-                <div class="faq-content">Hubungi kami melalui WhatsApp dan sertakan bukti pembelian kamu.</div>
-            </details>
-
-            <details>
-                <summary>⭐ Kenapa saya harus beli di MizueOfficial? <span class="faq-arrow">⌄</span></summary>
-                <div class="faq-content">Produk terjamin, garansi uang kembali, dan layanan pelanggan yang responsif.</div>
-            </details>
-
-            <details>
-                <summary>🔒 Apakah transaksi di website ini aman? <span class="faq-arrow">⌄</span></summary>
-                <div class="faq-content">Sistem pembayaran terenkripsi dan data kamu selalu dilindungi.</div>
-            </details>
+                <a href="#" class="btn-detail">📋 Detail Produk</a>
+                <
